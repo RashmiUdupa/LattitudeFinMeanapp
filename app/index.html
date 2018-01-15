@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="" ng-app="eventRegApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>EventRegApp</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="container">
+    <nav class="navbar navbar-inverse bg-primary">
+       <h1 class="centerHeading">Event Registration Form</h1>
+    </nav>
+   
+
+    <div ui-view></div>
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/angular/angular.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- endbuild -->
+  <!-- Angular Library-->
+  <script src="/bower_components/angular/angular.js"></script>
+  <!--End -->
+  <!-- Adding angular ui router -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <!-- ends -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/router.js -->
+  <script src="scripts/router.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/eventRegController.js -->
+  <script src="scripts/eventRegController.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/eventRegController.js -->
+  <script src="scripts/eventRegService.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/previewController.js -->
+  <script src="scripts/previewController.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/previewController.js -->
+  <script src="scripts/submittedDataController.js"></script>
+  <!-- endbuild -->
+
+  <!--<script>
+    function validateImage(){
+        var fileName = document.getElementById("fileName").value;
+        var idxDot = fileName.lastIndexOf(".") + 1;
+        var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
+        if (extFile=="jpg" || extFile=="jpeg" || extFile=="png"){
+           
+        }else{
+            alert("Only jpg/jpeg and png files are allowed!");
+        }   
+    }
+  </script>-->
+
+</body>
+
+</html>
